@@ -10,6 +10,12 @@ Certifique-se de ter instalado em sua máquina:
 
 Verifique se as variáveis de ambiente `JAVA_HOME` estão configuradas corretamente apontando para o JDK 17.
 
+> [!IMPORTANT]
+> Se o seu terminal (como o do VS Code) acusar o erro *"No compiler is provided in this environment"*, significa que ele não sabe onde o seu JDK está instalado. Antes de compilar, rode o comando abaixo no PowerShell para avisá-lo:
+> ```powershell
+> $env:JAVA_HOME="C:\Program Files\Java\jdk-17"
+> ```
+
 ## Como Compilar e Rodar o Projeto
 
 Este projeto utiliza o `javafx-maven-plugin` para gerenciar as dependências do JavaFX automaticamente. Não é necessário baixar o SDK do JavaFX separadamente.
