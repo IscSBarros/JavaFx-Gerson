@@ -32,6 +32,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>com.calculadora3d.Calculadora3D</mainClass>
+                    <launcher>calculadora</launcher>
                 </configuration>
             </plugin>
         </plugins>
