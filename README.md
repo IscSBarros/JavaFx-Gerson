@@ -36,6 +36,15 @@ Para rodar a aplicação diretamente via Maven:
 .\mvnw javafx:run
 ```
 
+### 3. Gerar um Executável Independente (Não precisa de Java instalado)
+
+Para empacotar a aplicação em um executável autônomo usando `jlink` (ideal para distribuir para outras pessoas):
+```bash
+.\mvnw clean javafx:jlink
+```
+Isso vai criar uma pasta chamada `image` dentro da pasta `target` (`target/image`). 
+Nessa pasta haverá tudo que o seu programa precisa para rodar! Basta ir na pasta `target/image/bin` e executar o arquivo `calculadora.bat` (ou apenas `calculadora` no Linux/Mac).
+
 ---
 
 *Nota:* Na primeira vez que você rodar o comando, o Maven fará o download de todas as dependências do JavaFX necessárias, o que pode levar alguns minutos dependendo da sua internet. Nas execuções seguintes, o processo será quase instantâneo.
