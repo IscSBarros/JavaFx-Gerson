@@ -20,14 +20,14 @@ Abra o terminal na pasta raiz do projeto e execute os comandos abaixo.
 
 Para limpar builds anteriores e compilar o código fonte:
 ```bash
-mvn clean compile
+.\mvnw clean compile
 ```
 
 ### 2. Executar a Aplicação
 
 Para rodar a aplicação diretamente via Maven:
 ```bash
-mvn javafx:run
+.\mvnw javafx:run
 ```
 
 ---
